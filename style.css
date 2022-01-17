@@ -1,88 +1,63 @@
 body, html {
-    height: 100%;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    background: #333;
-    color: #aaa;
-    margin: 0;
-  }
-  
-  .bgimg {
-    background-image: url('https://unsplash.it/1920/1080/?random');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: rgb(0, 0, 0);
-    font-family: "Courier New", Courier, monospace;
-    font-size: 25px;
-  }
-  
-  .topleft {
-    position: absolute;
-    top: 0;
-    left: 16px;
-  }
-  
-  .bottomleft {
-    position: absolute;
-    bottom: 0;
-    left: 16px;
-  }
-  
-  .middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  hr {
-    margin: auto;
-    width: 40%;
-  }
-  
-  body {
-    background-color: #333;
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  background: #333;
+  color: #aaa;
+  margin: 0;
+
 }
-.output {
-    text-align: center;
-    font-family: 'Source Code Pro', monospace;
-    color: white;
+
+
+
+.bgimg {
+  background-image: url('https://unsplash.it/1920/1080/?grayscale');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  /* color: #1805db; */
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
 }
-.output h1 {
-    font-size: 30px;
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
 }
-/* Cursor Styling */
-.cursor::after {
-    content: '';
-    display: inline-block;
-    margin-left: 3px;
-    background-color: white;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
 }
-h1.cursor::after {
-    height: 24px;
-    width: 13px;
+
+.middle {
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+
+
+
+
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
-p.cursor::after {
-    height: 13px;
-    width: 6px;
-}
-@keyframes blink {
-    0% {
-        opacity: 1;
-   }
-    49% {
-        opacity: 1;
-   }
-    50% {
-        opacity: 0;
-   }
-    100% {
-        opacity: 0;
-   }
+
+hr {
+  margin: auto;
+  width: 40%;
 }
